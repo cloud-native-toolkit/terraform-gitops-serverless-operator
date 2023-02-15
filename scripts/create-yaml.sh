@@ -8,4 +8,8 @@ DEST_DIR="$2"
 
 ## Add logic here to put the yaml resource content in DEST_DIR
 
+cp -R "${CHART_DIR}"/* "${DEST_DIR}"
+
+echo "${VALUES_CONTENT}" > "${DEST_DIR}/values.yaml"
+
 find "${DEST_DIR}" -name "*"
