@@ -1,5 +1,5 @@
 apiVersion: v2
-name: knative-serving-operator
+name: serverless-operator
 description: A Helm chart to deploy the Knative Serverless operator
 
 # A chart can be either an 'application' or a 'library' chart.

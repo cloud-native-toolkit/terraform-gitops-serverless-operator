@@ -1,5 +1,5 @@
 locals {
-  name          = "knative-serving-operator"
+  name          = "serverless-op"
   yaml_dir      = "${path.cwd}/.tmp/${local.name}/chart/${local.name}"
   service_url   = "http://${local.name}.${var.namespace}"
   values_content = {
