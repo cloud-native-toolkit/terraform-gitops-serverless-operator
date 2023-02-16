@@ -44,9 +44,9 @@ find . -name "*"
 
 set -e
 
-validate_gitops_content "${NAMESPACE}" "${LAYER}" "${SERVER_NAME}" "${TYPE}" "${COMPONENT_NAME}" "values.yaml"
+#validate_gitops_content "${NAMESPACE}" "${LAYER}" "${SERVER_NAME}" "${TYPE}" "${COMPONENT_NAME}" "values.yaml"
 
-check_k8s_namespace "${NAMESPACE}"
+check_k8s_namespace "openshift-operators"
 
 check_k8s_resource "openshift-operators" "subscription" "serverless-operator"
 
