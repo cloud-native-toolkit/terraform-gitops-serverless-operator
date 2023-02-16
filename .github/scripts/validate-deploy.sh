@@ -48,7 +48,7 @@ validate_gitops_content "${NAMESPACE}" "${LAYER}" "${SERVER_NAME}" "${TYPE}" "${
 
 check_k8s_namespace "${NAMESPACE}"
 
-check_k8s_resource "${NAMESPACE}" "subscription" "serverless-operator"
+check_k8s_resource "openshift-operators" "subscription" "serverless-operator"
 
 cd ..
 rm -rf .testrepo
