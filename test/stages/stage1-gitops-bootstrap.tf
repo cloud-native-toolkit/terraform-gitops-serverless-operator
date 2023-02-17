@@ -16,4 +16,4 @@ module "gitops-bootstrap" {
   prefix              = var.bootstrap_prefix
   kubeseal_namespace  = var.kubeseal_namespace
   create_webhook      = true
-}
+} 
