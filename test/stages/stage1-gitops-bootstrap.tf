@@ -13,7 +13,7 @@ module "gitops-bootstrap" {
   bootstrap_path      = module.gitops.bootstrap_path
   sealed_secret_cert  = module.cert.cert
   sealed_secret_private_key = module.cert.private_key
-  prefix              = substr(var.bootstrap_prefix, 0, 62)
+  prefix              = var.bootstrap_prefix
   kubeseal_namespace  = var.kubeseal_namespace
   create_webhook      = true
 }
