@@ -1,8 +1,9 @@
 locals {
-  name          = "my-module"
+  name          = "serverless-op"
   yaml_dir      = "${path.cwd}/.tmp/${local.name}/chart/${local.name}"
   service_url   = "http://${local.name}.${var.namespace}"
   values_content = {
+    serverless_namespace = var.namespace
   }
   layer = "services"
   type  = "base"
