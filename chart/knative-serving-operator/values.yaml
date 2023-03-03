@@ -2,4 +2,5 @@
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
-serverless_namespace: openshift-serverless
+serverless-operator: 
+  serverless_namespace: openshift-serverless
