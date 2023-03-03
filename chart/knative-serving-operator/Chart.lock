@@ -1,0 +1,6 @@
+dependencies:
+- name: serverless-operator
+  repository: https://charts.cloudnativetoolkit.dev/
+  version: 1.0.0
+digest: sha256:cde157bcaaa5bbb85c0abd2f6acbce8c7fdb0d65a358e546881754ca4ddaab5d
+generated: "2023-03-03T10:42:59.811721-05:00"
